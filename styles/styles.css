@@ -8,6 +8,20 @@ body {
   padding: 0;
 }
 
+/* NAVIGATION */
+nav {
+  background-color: #4CAF50;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  padding: 0.5rem;
+  display: block;
+  text-decoration: none;
+}
+
+/* MAIN CONTENT */
 main {
   max-width: 800px;
   margin: 1rem auto;
@@ -18,8 +32,16 @@ main img {
   margin: 0 auto;
   width: 150px;
   height: auto;
+  border: 2px solid #ccc;
+  padding: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
+h1 {
+  color: #333333;
+}
+
+/* ASIDE */
 aside {
   width: 300px;
   margin: 1rem auto;
@@ -34,10 +56,12 @@ aside img {
   height: auto;
 }
 
+/* PARAGRAPHS */
 p {
   padding: 0;
 }
 
+/* FOOTER */
 footer {
   margin-top: 2rem;
   border-top: 1px solid #ccc;
