@@ -1,10 +1,4 @@
-:root {
-  --primary-color: #2a6f97;
-  --accent1-color: #e6b800;
-  --body-font: Arial, sans-serif;
-  --heading-font: "Georgia", serif;
-}
-
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -12,61 +6,89 @@
 }
 
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+/* HEADER GRID */
+.header-grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  padding: 1rem;
 }
 
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+header img {
+  width: 120px;
 }
 
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+/* NAV FLEX */
+nav {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.socialmedia a {
+nav a {
   text-decoration: none;
+  padding: 1rem;
 }
 
+/* HERO */
 .hero {
   position: relative;
 }
 
 .hero img {
-  display: block;
   width: 100%;
-  height: auto;
 }
 
-h1 {
+.hero h1 {
   position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
+  top: 1rem;
+  left: 1rem;
+  color: white;
 }
 
 .hero article {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  width: 70%;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 12px;
+  bottom: 1rem;
+  left: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 1rem;
 }
 
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 12px;
+/* HISTORY */
+.history {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.history img {
+  width: 100%;
+}
+
+/* ADVENTURES */
+.adventures {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.adventures img {
+  width: 150px;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.social img {
+  width: 30px;
+  margin-left: 0.5rem;
 }
