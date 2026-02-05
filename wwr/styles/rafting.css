@@ -34,14 +34,13 @@ nav a {
   margin-left: 1rem;
 }
 
-/* HERO */
+/* HERO (USED ON OTHER PAGES) */
 .hero {
   position: relative;
 }
 
 .hero img {
   width: 100%;
-  height: auto;
 }
 
 .hero h1 {
@@ -97,6 +96,62 @@ nav a {
   width: 200px;
 }
 
+/* CONTACT PAGE */
+.contact-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.company-info iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  margin-top: 1rem;
+}
+
+.employees {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.employees figure {
+  text-align: center;
+}
+
+.employees img {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+fieldset label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox {
+  margin-top: 0.5rem;
+}
+
 /* FOOTER */
 footer {
   display: flex;
@@ -105,9 +160,24 @@ footer {
   background-color: var(--primary-color);
   color: white;
   padding: 1rem;
+  margin-top: 2rem;
 }
 
 .socialmedia img {
   width: 30px;
   margin-left: 0.5rem;
+}
+
+/* BUTTON */
+button {
+  background-color: #005f73;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  background-color: #0a9396;
 }
